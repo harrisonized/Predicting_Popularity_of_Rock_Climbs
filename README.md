@@ -10,4 +10,4 @@ This project is split roughly into three parts:
 
 For the Data Acquisition, I obtained data on both [Bishop, CA](https://www.mountainproject.com/area/106064825/bishop-area) and [Joshua Tree](https://www.mountainproject.com/area/105720495/joshua-tree-national-park). However, for the modeling, I chose to focus on the Bishop dataset.
 
-For more information, please read my [blog post](https://harrisonized.github.io/2019/04/23/predicting-popularity-of-rock-climbs-regression.html) and feel free to [email me](mailto:harrisonized@gmail.com) with any questions.
+For more information, please read my [blog post](https://harrisonized.github.io/2019/04/23/mountain-project-recommender.html) and feel free to [email me](mailto:harrisonized@gmail.com) with any questions.
