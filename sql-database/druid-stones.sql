@@ -1,6 +1,6 @@
 \c mountain_project;
 
-CREATE TABLE buttermilks_df(
+CREATE TABLE druid_stones(
   ind INT,
   route TEXT,
   location TEXT,
@@ -19,4 +19,4 @@ CREATE TABLE buttermilks_df(
   ticks INT
 );
 
-\copy buttermilks_df FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/buttermilks-df.csv' DELIMITER ',' CSV HEADER;
+\copy druid_stones FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/druid_stones-df.csv' DELIMITER ',' CSV HEADER;

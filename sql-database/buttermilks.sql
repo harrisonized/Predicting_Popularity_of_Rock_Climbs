@@ -1,6 +1,6 @@
 \c mountain_project;
 
-CREATE TABLE joshua_tree_df(
+CREATE TABLE buttermilks(
   ind INT,
   route TEXT,
   location TEXT,
@@ -19,4 +19,4 @@ CREATE TABLE joshua_tree_df(
   ticks INT
 );
 
-\copy joshua_tree_df FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/joshua_tree-df.csv' DELIMITER ',' CSV HEADER;
+\copy buttermilks FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/buttermilks-df.csv' DELIMITER ',' CSV HEADER;

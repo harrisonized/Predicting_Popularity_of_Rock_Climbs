@@ -1,6 +1,6 @@
 \c mountain_project;
 
-CREATE TABLE druid_stones_df(
+CREATE TABLE sad_boulders(
   ind INT,
   route TEXT,
   location TEXT,
@@ -19,4 +19,4 @@ CREATE TABLE druid_stones_df(
   ticks INT
 );
 
-\copy druid_stones_df FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/druid_stones-df.csv' DELIMITER ',' CSV HEADER;
+\copy sad_boulders FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/sad_boulders-df.csv' DELIMITER ',' CSV HEADER;

@@ -1,6 +1,6 @@
 \c mountain_project;
 
-CREATE TABLE happy_boulders_df(
+CREATE TABLE joshua_tree(
   ind INT,
   route TEXT,
   location TEXT,
@@ -19,4 +19,4 @@ CREATE TABLE happy_boulders_df(
   ticks INT
 );
 
-\copy happy_boulders_df FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/happy_boulders-df.csv' DELIMITER ',' CSV HEADER;
+\copy joshua_tree FROM '/home/harrisonized/github/mountain-project-recommender/data/scraped-data/joshua_tree-df.csv' DELIMITER ',' CSV HEADER;
