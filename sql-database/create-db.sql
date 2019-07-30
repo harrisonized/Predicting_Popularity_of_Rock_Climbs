@@ -3,6 +3,7 @@ CREATE DATABASE mountain_project;
 \c mountain_project;
 
 CREATE TABLE buttermilks(
+  id_ SERIAL PRIMARY KEY,
   route TEXT,
   location TEXT,
   url TEXT,
@@ -17,6 +18,7 @@ CREATE TABLE buttermilks(
 );
 
 CREATE TABLE druid_stones(
+  id_ SERIAL PRIMARY KEY,
   route TEXT,
   location TEXT,
   url TEXT,
@@ -31,6 +33,7 @@ CREATE TABLE druid_stones(
 );
 
 CREATE TABLE happy_boulders(
+  id_ SERIAL PRIMARY KEY,
   route TEXT,
   location TEXT,
   url TEXT,
@@ -45,6 +48,7 @@ CREATE TABLE happy_boulders(
 );
 
 CREATE TABLE sad_boulders(
+  id_ SERIAL PRIMARY KEY,
   route TEXT,
   location TEXT,
   url TEXT,
@@ -59,6 +63,7 @@ CREATE TABLE sad_boulders(
 );
 
 CREATE TABLE joshua_tree(
+  id_ SERIAL PRIMARY KEY,
   route TEXT,
   location TEXT,
   url TEXT,
@@ -72,8 +77,22 @@ CREATE TABLE joshua_tree(
   area_longitude FLOAT
 );
 
-\copy buttermilks FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/buttermilks.csv' DELIMITER ',' CSV HEADER;
-\copy druid_stones FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/druid_stones.csv' DELIMITER ',' CSV HEADER;
-\copy happy_boulders FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/happy_boulders.csv' DELIMITER ',' CSV HEADER;
-\copy sad_boulders FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/sad_boulders.csv' DELIMITER ',' CSV HEADER;
-\copy joshua_tree FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/joshua_tree.csv' DELIMITER ',' CSV HEADER;
+COPY buttermilks (route, location, url, avg_stars, your_stars, route_type, rating, pitches, length_, area_latitude, area_longitude)
+FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/buttermilks.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+COPY druid_stones (route, location, url, avg_stars, your_stars, route_type, rating, pitches, length_, area_latitude, area_longitude)
+FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/druid_stones.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+COPY happy_boulders (route, location, url, avg_stars, your_stars, route_type, rating, pitches, length_, area_latitude, area_longitude)
+FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/happy_boulders.csv' 
+WITH DELIMITER ',' CSV HEADER;
+
+COPY sad_boulders (route, location, url, avg_stars, your_stars, route_type, rating, pitches, length_, area_latitude, area_longitude)
+FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/sad_boulders.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+COPY joshua_tree (route, location, url, avg_stars, your_stars, route_type, rating, pitches, length_, area_latitude, area_longitude)
+FROM '/home/harrisonized/github/mountain-project-recommender/data/downloads/joshua_tree.csv'
+WITH DELIMITER ',' CSV HEADER;
