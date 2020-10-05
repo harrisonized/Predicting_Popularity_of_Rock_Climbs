@@ -7,7 +7,7 @@ import statsmodels.api as sm
 
 # Functions included in this file:
 # # plot_empty
-# # plot_heatmap
+# # plot_corr
 # # plot_single_scatter
 # # plot_histogram
 # # plot_qq
@@ -29,7 +29,7 @@ def plot_empty(xlabel=None, ylabel=None,
     return fig, ax
 
 
-def plot_heatmap(df, title, order=None, figsize=(8, 5)):
+def plot_corr(df, title, order=None, figsize=(8, 5)):
     """
     """
     fig = plt.figure(figsize=figsize)
