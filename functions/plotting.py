@@ -1,8 +1,3 @@
-import json
-import numpy as np
-import pandas as pd
-import pandas.io.sql as pd_sql
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm

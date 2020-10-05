@@ -1,11 +1,4 @@
-import os
-from os.path import expanduser
-import json
-import pandas as pd
-import pandas.io.sql as pd_sql
-from sqlalchemy import create_engine
 import psycopg2 as pg
-
 
 # Functions included in this file:
 # # connection_fetch_close

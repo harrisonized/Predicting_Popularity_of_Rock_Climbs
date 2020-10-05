@@ -18,7 +18,7 @@ pd.set_option('mode.chained_assignment', None)
 # Functions included in this file:
 # # preprocess
 # # get_ratings_from_mp
-# # create_feature_transforms
+# # transform_features
 
 
 grades_converter = {'V-easy': -1, 'V-easy PG13': -1, '5.9 V-easy': -1, 'V-easy R': -0.75,
