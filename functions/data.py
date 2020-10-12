@@ -7,13 +7,14 @@ import pandas as pd
 import bs4
 import requests
 from tqdm.notebook import tqdm
-from .formatting import title_to_snake_case, dict_to_col
+from .formatting.text_tools import title_to_snake_case
+from .pandas.data import dict_to_col
 
 pd.set_option('mode.chained_assignment', None)
 
 
 # Objects included in this file:
-# grade_converter
+# grades_converter
 
 # Functions included in this file:
 # # preprocess
